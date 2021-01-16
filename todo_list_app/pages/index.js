@@ -12,7 +12,7 @@ const App = () => {
       return;
     }
     setTodos([...todos, tmpTodo]);
-    setTmpTodo("");
+    setTmpTodo(""); //Addを押したした後にinputを空にする
   };
 
   // todoを削除する処理
