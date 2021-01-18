@@ -5,8 +5,8 @@ const App = () => {
   // フォームに入力された値をtodoに登録するまでに入れておくためのstate
   const [tmpTodo, setTmpTodo] = useState("");
 
+  // formの内容が空白の場合はalertを出す
   const addTodo = () => {
-    // formの内容が空白の場合はalertを出す
     if (tmpTodo === "") {
       alert("文字を入力してください");
       return;
@@ -18,7 +18,7 @@ const App = () => {
   // todoを削除する処理
   const deletetodo = index => {
     const newTodos = todos.filter((todo, todoIndex) => {
-      return index !== todoIndex;
+      return index !== todoIndex; //removeを押したリスト以外表示
     });
     setTodos(newTodos);
   };
