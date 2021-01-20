@@ -1,0 +1,16 @@
+.topPageSection {
+  display: flex;
+  height: 100%;
+
+  &__left,
+  &__right {
+    width: 50%;
+  }
+
+  &__right {
+    padding-left: 20px;
+    height: 100vh;
+    overflow: scroll;
+    border-left: 3px solid #333;
+  }
+}
